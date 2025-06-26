@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salesforce Chat</title>
+</head>
+<body>
+
+<!-- You can put a button or launcher icon here if needed -->
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US';
+			embeddedservice_bootstrap.init(
+				'00D2v000000SgBD',
+				'AgentforceAgent',
+				'https://d2v000000sgbdea0.my.site.com/ESWAgentforceAgent1750785429851',
+				{
+					scrt2URL: 'https://d2v000000sgbdea0.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+
+<script type='text/javascript' src='https://d2v000000sgbdea0.my.site.com/ESWAgentforceAgent1750785429851/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
